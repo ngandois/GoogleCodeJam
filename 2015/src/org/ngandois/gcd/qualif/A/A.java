@@ -27,7 +27,7 @@ public class A implements Function<Exercise.TestCase, Exercise.TestResult>{
         int maxShyness = Integer.parseInt(c.data.substring(0, c.data.indexOf(" ")));
         char[] people =  c.data.substring(c.data.indexOf(" ") + 1, c.data.length()).toCharArray();
 
-        for (int shynessCursor = 0; shynessCursor < people.length && nbStandUp < maxShyness; shynessCursor++) {
+        for (int shynessCursor = 0; (shynessCursor < people.length) && (nbStandUp + nbToInvite < maxShyness); shynessCursor++) {
             int nextNbStandUp = Character.getNumericValue(people[shynessCursor]);
 
             if (nbStandUp + nbToInvite < shynessCursor){
