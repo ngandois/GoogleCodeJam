@@ -7,9 +7,6 @@ import java.util.StringJoiner;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collector;
 
-/**
- * Created by ngandois on 18/04/15.
- */
 public class ResultWriter {
 
     private final String[] results;
@@ -30,13 +27,14 @@ public class ResultWriter {
      */
     public void write(int caseNb, String... results) {
         StringBuilder tmp = new StringBuilder(20);
-        tmp.append("Case #").append(String.valueOf(caseNb + 1)).append(": ");
-        for (int i = 0; i < results.length; i++) {
-            tmp.append(results[i]).append(" ");
+        tmp.append("Case #").append(String.valueOf(caseNb)).append(": ");
+
+        for (String result : results) {
+            tmp.append(result).append(" ");
         }
         tmp.setLength(tmp.length() - 1);
         tmp.append("\n");
-        this.results[caseNb] = tmp.toString();
+        this.results[caseNb - 1] = tmp.toString();
 
         if (currentNbResults.addAndGet(1) == this.results.length) {
             flush();
@@ -48,8 +46,8 @@ public class ResultWriter {
         try {
             FileWriter w = new FileWriter(fileName);
 
-            for (int i = 0; i < results.length; i++) {
-                w.write(results[i]);
+            for (String result : results) {
+                w.write(result);
             }
             w.flush();
 

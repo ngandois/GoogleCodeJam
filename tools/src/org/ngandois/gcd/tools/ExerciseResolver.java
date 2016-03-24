@@ -3,20 +3,17 @@ package org.ngandois.gcd.tools;
 import java.io.IOException;
 import java.util.function.Function;
 
-/**
- * Created by ngandois on 20/04/15.
- */
 public class ExerciseResolver {
 
     private final Function<Exercise.TestCase, Exercise.TestResult> solver;
     private final Exercise exercise;
     private final ResultWriter writer;
 
-    public ExerciseResolver(String year, String caseName, boolean isSmallInput, Function<Exercise.TestCase, Exercise.TestResult> solver) throws IOException {
+    public ExerciseResolver(String year, String caseName, boolean isSmallInput, Function<Exercise.TestCase, Exercise.TestResult> solver, CaseReader caseReader) throws IOException {
         this.solver = solver;
 
         String exerciseType = isSmallInput ? "small" : "large";
-        exercise = ExerciseReader.retrieveData(year, caseName + "-" + exerciseType+ "-practice.in.txt");
+        exercise = ExerciseReader.createExercise(year, caseName + "-" + exerciseType+ "-practice.in.txt", caseReader);
         writer = new ResultWriter(exercise.nbCase, year, caseName + "-" + exerciseType+ "-practice.out.txt");
     }
 
