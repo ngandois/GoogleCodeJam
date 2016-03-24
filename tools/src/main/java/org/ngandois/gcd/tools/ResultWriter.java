@@ -2,6 +2,8 @@ package org.ngandois.gcd.tools;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.LongSummaryStatistics;
 import java.util.StringJoiner;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -13,9 +15,10 @@ public class ResultWriter {
     private AtomicInteger currentNbResults = new AtomicInteger(0);
     private String fileName;
 
+    private static final String outputFolder =  "exercise-output";
 
-    public ResultWriter(int nbCases, String year, String fileName) {
-        this.fileName = String.join("/", year, "output", fileName);
+    public ResultWriter(int nbCases, String year, String fileName) throws IOException {
+        this.fileName = String.join("/", year, "exercise-output", fileName);
         results = new String[nbCases];
     }
 

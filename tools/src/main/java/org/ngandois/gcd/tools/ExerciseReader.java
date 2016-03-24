@@ -13,7 +13,7 @@ public class ExerciseReader {
 
 
     public static Exercise createExercise(String year, String fileName, CaseReader caseReader) throws IOException {
-        List<String> lines = Files.readAllLines(Paths.get(year + "/resources", fileName));
+        List<String> lines = Files.readAllLines(Paths.get(year + "/src/main/resources", fileName));
 
         String sNbTest = lines.remove(0);
         int testCount = 1;
