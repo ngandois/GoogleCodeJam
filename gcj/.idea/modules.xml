@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/gcj.iml" filepath="$PROJECT_DIR$/gcj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gcj.iml" filepath="$PROJECT_DIR$/.idea/modules/gcj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gcj_main.iml" filepath="$PROJECT_DIR$/.idea/modules/gcj_main.iml" group="gcj" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gcj_test.iml" filepath="$PROJECT_DIR$/.idea/modules/gcj_test.iml" group="gcj" />
     </modules>
   </component>
 </project>
