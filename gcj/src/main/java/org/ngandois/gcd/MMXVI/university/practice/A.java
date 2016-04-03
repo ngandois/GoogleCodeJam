@@ -9,10 +9,10 @@ import java.util.function.Function;
 
 public class A implements Function<Exercise.TestCase, Exercise.TestResult>{
 
-    public static void main(String[] args) throws IOException {
+    public static final CaseReader reader = new ReadNbLineFirstCaseReader(new InputSpaceParsing());
 
+    public static void main(String[] args) throws IOException {
         A solver = new A();
-        CaseReader reader = new ReadNbLineFirstCaseReader(new InputSpaceParsing());
         new ExerciseResolver("src/main/resources/A-small-practice-1", solver, reader).resolve();
         new ExerciseResolver("src/main/resources/A-small-practice-2", solver, reader).resolve();
     }
