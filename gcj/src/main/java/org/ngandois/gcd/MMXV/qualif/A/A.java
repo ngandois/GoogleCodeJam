@@ -12,10 +12,11 @@ public class A implements Function<Exercise.TestCase, Exercise.TestResult>{
     public static void main(String[] args) throws IOException {
 
         A solver = new A();
-        CaseReader reader = new LineByLineCaseReader(new InputRegexpParsing("\\s"));
-        new ExerciseResolver("A", true, solver, reader).resolve();
-        new ExerciseResolver("A", false, solver, reader).resolve();
+        CaseReader reader = new LineByLineCaseReader(new InputSpaceParsing());
+        new ExerciseResolver("src/main/resources/A-small-practice", solver, reader).resolve();
+        new ExerciseResolver("src/main/resources/A-large-practice", solver, reader).resolve();
     }
+
 
     @Override
     public Exercise.TestResult apply(Exercise.TestCase c) {

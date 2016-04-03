@@ -13,8 +13,8 @@ public class A implements Function<Exercise.TestCase, Exercise.TestResult>{
 
         A solver = new A();
         CaseReader reader = new ReadNbLineFirstCaseReader(new InputSpaceParsing());
-        new ExerciseResolver("A", true, "-1", solver, reader).resolve();
-        new ExerciseResolver("A", true, "-2", solver, reader).resolve();
+        new ExerciseResolver("src/main/resources/A-small-practice-1", solver, reader).resolve();
+        new ExerciseResolver("src/main/resources/A-small-practice-2", solver, reader).resolve();
     }
 
     private static final String[] yes = new String[]{"Yes"};

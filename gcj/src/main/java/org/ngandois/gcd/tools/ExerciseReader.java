@@ -12,8 +12,8 @@ import java.util.stream.Collectors;
 public class ExerciseReader {
 
 
-    public static Exercise createExercise(String fileName, CaseReader caseReader) throws IOException {
-        List<String> lines = Files.readAllLines(Paths.get("src/main/resources", fileName));
+    public static Exercise createExercise(String filePath, CaseReader caseReader) throws IOException {
+        List<String> lines = Files.readAllLines(Paths.get(filePath));
 
         String sNbTest = lines.remove(0);
         int testCount = 1;

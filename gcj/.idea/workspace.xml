@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ed5508d-89e2-4329-ac5d-34737dd41c67" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sbt.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="6756310d-0298-4cb2-9fd7-1b1dbd1be894" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/ngandois/gcd/OneTestByLineTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/OneTestByLineTest.in.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/A-small-practice.out_reference.txt" afterPath="$PROJECT_DIR$/src/test/resources/OneTestByLineTest.out-reference.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/ngandois/gcd/MMXV/qualif/A/A.java" afterPath="$PROJECT_DIR$/src/main/java/org/ngandois/gcd/MMXV/qualif/A/A.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/ngandois/gcd/MMXVI/university/practice/A.java" afterPath="$PROJECT_DIR$/src/main/java/org/ngandois/gcd/MMXVI/university/practice/A.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/ngandois/gcd/tools/ExerciseReader.java" afterPath="$PROJECT_DIR$/src/main/java/org/ngandois/gcd/tools/ExerciseReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/ngandois/gcd/tools/ExerciseResolver.java" afterPath="$PROJECT_DIR$/src/main/java/org/ngandois/gcd/tools/ExerciseResolver.java" />
     </list>
     <ignored path="gcj.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
-    <ignored path=".idea/" />
+    <ignored path="out/" />
+    <ignored path="src/main/resources/" />
+    <ignored path="exercise-output/" />
     <ignored path="gradle/wrapper/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,12 +47,131 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="gcj" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="gcj" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ExerciseResolver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ngandois/gcd/tools/ExerciseResolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OneTestByLineTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/ngandois/gcd/OneTestByLineTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradle-wrapper.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OneTestByLineTest.out-reference.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/OneTestByLineTest.out-reference.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultWriter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ngandois/gcd/tools/ResultWriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractFileAssert.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.4.0/771927ba0f581e24e43690ff70cb97dcb6201459/assertj-core-3.4.0-sources.jar!/org/assertj/core/api/AbstractFileAssert.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="235" column="27" selection-start-line="235" selection-start-column="11" selection-end-line="235" selection-end-column="27" />
+              <folding>
+                <element signature="e#8666#8667#0" expanded="true" />
+                <element signature="e#8709#8710#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="A.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ngandois/gcd/MMXVI/university/practice/A.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="A.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ngandois/gcd/MMXV/qualif/A/A.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExerciseReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ngandois/gcd/tools/ExerciseReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -94,11 +221,6 @@
                 <option name="description" value="Assembles main classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'gcj'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Gradle wrapper files. [incubating]" />
@@ -212,12 +334,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="D:/ngandois/eclipse-ws/hsdk-root" value="11456231453500" />
-        <entry key="D:/ngandois/idea-ws/horizon-trader-external/hsdk-root" value="8672224513854" />
-        <entry key="D:/ngandois/idea-ws/horizon_trader_v2.29.14.x_maintenance" value="81695747257503" />
-        <entry key="D:/ngandois/idea-ws/hsdk-branches/hsdk-root" value="7160677643496" />
-        <entry key="D:/ngandois/idea-ws/hsdk-root" value="23015269216595" />
-        <entry key="$PROJECT_DIR$" value="1459251003649" />
+        <entry key="$PROJECT_DIR$" value="1459714827000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -239,66 +356,6 @@
               <option name="name" value="gcj" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/ant-1.9.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/ant-launcher-1.9.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-base-services-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-base-services-groovy-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-cli-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-core-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-docs-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-launcher-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-messaging-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-model-core-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-model-groovy-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-native-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-open-api-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-resources-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-tooling-api-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-ui-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/gradle-wrapper-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/groovy-all-2.4.4.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-announce-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-antlr-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-build-comparison-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-build-init-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-code-quality-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-dependency-management-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-diagnostics-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-ear-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-ide-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-ide-native-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-ivy-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-jacoco-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-javascript-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-jetty-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-language-groovy-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-language-java-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-language-jvm-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-language-native-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-language-scala-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-maven-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-osgi-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-platform-base-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-platform-jvm-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-platform-native-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-platform-play-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-plugin-development-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-plugin-use-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-plugins-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-publish-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-reporting-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-resources-http-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-resources-s3-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-resources-sftp-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-scala-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-signing-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-sonar-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-test-kit-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-testing-base-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-testing-jvm-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-testing-native-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/gradle-tooling-api-builders-2.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.12-bin/coqifigo3ifyhdzmo8pfeccv/gradle-2.12/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -312,6 +369,19 @@
       <projects_view />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ngandois/gcd/tools/ExerciseReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ngandois/gcd/MMXV/qualif/A/A.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ngandois/gcd/MMXVI/university/practice/A.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ngandois/gcd/tools/ExerciseResolver.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/OneTestByLineTest.out-reference.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/org/ngandois/gcd/OneTestByLineTest.java" />
+      </list>
+    </option>
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -319,14 +389,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState />
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1928" />
-    <option name="height" value="1060" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -386,6 +452,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -489,7 +603,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
+              <option name="myItemId" value="exercise-output" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -501,14 +615,75 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Confirmation" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.OneTestByLineTest">
+    <configuration default="false" name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.ngandois.gcd.MMXV.qualif.A.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.ngandois.gcd.MMXV.qualif.A.A" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="gcj_main" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="OneTestByLineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.ngandois.gcd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="gcj_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.ngandois.gcd" />
+      <option name="MAIN_CLASS_NAME" value="org.ngandois.gcd.OneTestByLineTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -518,6 +693,7 @@
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -531,7 +707,24 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -551,6 +744,48 @@
       <patterns />
       <method />
     </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -559,18 +794,130 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
     </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.A" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.OneTestByLineTest" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.OneTestByLineTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.A" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1459251219094" />
+    <option name="lastUpdateTimestamp" value="1459714848998" />
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../../coursera/progfun/example" value="1425040220000" />
+        <entry key="$PROJECT_DIR$/../../coursera/progfun/funsets" value="1424632792000" />
+        <entry key="$PROJECT_DIR$/../../coursera/progfun/recfun" value="1424632818000" />
+      </map>
+    </option>
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -578,36 +925,43 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="TestHistory">
+    <history-entry file="OneTestByLineTest - 2016.04.03 at 22h 46m 28s.xml">
+      <configuration name="OneTestByLineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OneTestByLineTest - 2016.04.03 at 22h 46m 50s.xml">
+      <configuration name="OneTestByLineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OneTestByLineTest - 2016.04.03 at 22h 47m 00s.xml">
+      <configuration name="OneTestByLineTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1060" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286026" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5044136" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14110756" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3220524" sideWeight="0.49320036" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17944622" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="253" y="84" width="461" height="916" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17412141" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0937053" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3998935" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.3995633" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="1973" y="49" width="1802" height="979" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19978166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33013844" sideWeight="0.4955864" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="103" y="99" width="1728" height="860" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290735" sideWeight="0.4955864" order="2" side_tool="false" content_ui="tabs" x="1927" y="5" width="1896" height="1049" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -616,6 +970,105 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.4.0/771927ba0f581e24e43690ff70cb97dcb6201459/assertj-core-3.4.0-sources.jar!/org/assertj/core/api/AbstractFileAssert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="235" column="27" selection-start-line="235" selection-start-column="11" selection-end-line="235" selection-end-column="27" />
+          <folding>
+            <element signature="e#8666#8667#0" expanded="true" />
+            <element signature="e#8709#8710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ngandois/gcd/tools/ExerciseReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ngandois/gcd/MMXV/qualif/A/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ngandois/gcd/MMXVI/university/practice/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="67" selection-start-line="16" selection-start-column="67" selection-end-line="16" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ngandois/gcd/tools/ResultWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ngandois/gcd/tools/ExerciseResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/OneTestByLineTest.out-reference.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/ngandois/gcd/OneTestByLineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -633,7 +1086,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>groovy-2.4.5</last-edited>
+          <last-edited>scala-sdk-2.10.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

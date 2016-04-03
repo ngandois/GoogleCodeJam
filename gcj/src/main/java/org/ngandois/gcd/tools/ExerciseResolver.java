@@ -9,17 +9,15 @@ public class ExerciseResolver {
     private final Exercise exercise;
     private final ResultWriter writer;
 
-    public ExerciseResolver(String caseName, boolean isSmallInput, Function<Exercise.TestCase, Exercise.TestResult> solver, CaseReader caseReader) throws IOException {
-        this(caseName, isSmallInput, "", solver, caseReader);
-    }
-
-    public ExerciseResolver(String caseName, boolean isSmallInput, String caseSuffix, Function<Exercise.TestCase, Exercise.TestResult> solver, CaseReader caseReader) throws IOException {
+    public ExerciseResolver(String fileInput, Function<Exercise.TestCase, Exercise.TestResult> solver, CaseReader caseReader) throws IOException {
         this.solver = solver;
 
-        String exerciseType = isSmallInput ? "small" : "large";
-        exercise = ExerciseReader.createExercise(caseName + "-" + exerciseType + "-practice" + caseSuffix + ".in.txt", caseReader);
-        writer = new ResultWriter(exercise.nbCase, caseName + "-" + exerciseType + "-practice" + caseSuffix + ".out.txt");
+        exercise = ExerciseReader.createExercise(fileInput + ".in.txt", caseReader);
+
+        String[] inputs = fileInput.split("/"); // reuse the file name only
+        writer = new ResultWriter(exercise.nbCase, inputs[inputs.length - 1] + ".out.txt");
     }
+
 
     public void resolve() {
         long b = System.currentTimeMillis();
