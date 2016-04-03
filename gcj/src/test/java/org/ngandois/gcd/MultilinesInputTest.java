@@ -1,7 +1,7 @@
 package org.ngandois.gcd;
 
 import org.junit.Test;
-import org.ngandois.gcd.MMXV.qualif.A.A;
+import org.ngandois.gcd.MMXVI.university.practice.A;
 import org.ngandois.gcd.tools.CaseReader;
 import org.ngandois.gcd.tools.ExerciseResolver;
 import org.ngandois.gcd.tools.InputSpaceParsing;
@@ -12,16 +12,16 @@ import java.io.IOException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class OneTestByLineTest {
+public class MultiLinesInputTest {
 
     @Test
     public void executeAndCheckOutput() throws IOException {
         A solver = new A();
         CaseReader reader = new LineByLineCaseReader(new InputSpaceParsing());
-        new ExerciseResolver("src/test/resources/OneTestByLineTest", solver, reader).resolve();
+        new ExerciseResolver("src/test/resources/MultiLinesInputTest", solver, reader).resolve();
 
-        File refFile = new File("src/test/resources/OneTestByLineTest.out-reference.txt");
-        File expectedFile = new File("exercise-output/OneTestByLineTest.out.txt");
+        File refFile = new File("src/test/resources/MultiLinesInputTest.out-reference.txt");
+        File expectedFile = new File("exercise-output/MultiLinesInputTest.out.txt");
         assertThat(refFile).hasSameContentAs(expectedFile);
     }
 }
