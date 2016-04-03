@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6756310d-0298-4cb2-9fd7-1b1dbd1be894" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gcj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -954,7 +954,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removed .idea file &#10;added a JUnit" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed .idea file &#10;added a JUnit" />
+    <MESSAGE value="removed .idea file" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed .idea file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
