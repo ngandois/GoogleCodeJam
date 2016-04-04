@@ -13,7 +13,7 @@ public class MultiLinesInputTest {
 
     @Test
     public void executeAndCheckOutput() throws IOException {
-        new ExerciseResolver("src/test/resources/MultiLinesInputTest", new A(), A.reader).resolve();
+        new ExerciseResolver("MultiLinesInputTest", new A()).resolve();
 
         File refFile = new File("src/test/resources/MultiLinesInputTest.out-reference.txt");
         File expectedFile = new File("exercise-output/MultiLinesInputTest.out.txt");
