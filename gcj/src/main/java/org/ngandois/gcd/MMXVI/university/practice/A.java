@@ -7,18 +7,20 @@ import java.util.*;
 import java.util.function.Function;
 
 
-public class A implements Function<Exercise.TestCase, Exercise.TestResult>{
-
-    public static final CaseReader reader = new ReadNbLineFirstCaseReader(new InputSpaceParsing());
+public class A extends CaseResolver {
 
     public static void main(String[] args) throws IOException {
         A solver = new A();
-        new ExerciseResolver("src/main/resources/A-small-practice-1", solver, reader).resolve();
-        new ExerciseResolver("src/main/resources/A-small-practice-2", solver, reader).resolve();
+        new ExerciseResolver("A-small-practice-1", solver).resolve();
+        new ExerciseResolver("A-small-practice-2", solver).resolve();
     }
 
     private static final String[] yes = new String[]{"Yes"};
     private static final String[] no = new String[]{"No"};
+
+    public A(){
+        super(new ReadNbLineFirstCaseReader(new InputSpaceParsing()));
+    }
 
     @Override
     public Exercise.TestResult apply(Exercise.TestCase c) {

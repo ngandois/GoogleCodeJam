@@ -13,7 +13,7 @@ public class SingleLineInputTest {
 
     @Test
     public void executeAndCheckOutput() throws IOException {
-        new ExerciseResolver("src/test/resources/SingleLineInputTest", new A(), A.reader).resolve();
+        new ExerciseResolver("SingleLineInputTest", new A()).resolve();
 
         File refFile = new File("src/test/resources/SingleLineInputTest.out-reference.txt");
         File expectedFile = new File("exercise-output/SingleLineInputTest.out.txt");

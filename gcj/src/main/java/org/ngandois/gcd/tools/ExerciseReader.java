@@ -2,6 +2,7 @@ package org.ngandois.gcd.tools;
 
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,9 +12,15 @@ import java.util.stream.Collectors;
 
 public class ExerciseReader {
 
+    private static final String resourcesPath = "src/main/resources/";
+    private static final String testResourcesPath = "src/test/resources/";
 
-    public static Exercise createExercise(String filePath, CaseReader caseReader) throws IOException {
-        List<String> lines = Files.readAllLines(Paths.get(filePath));
+    public static Exercise createExercise(String fileName, CaseReader caseReader) throws IOException {
+        Path p = Paths.get(resourcesPath, fileName);
+        if(!Files.exists(p))
+            p = Paths.get(testResourcesPath, fileName);
+
+        List<String> lines = Files.readAllLines(p);
 
         String sNbTest = lines.remove(0);
         int testCount = 1;

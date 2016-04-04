@@ -7,15 +7,16 @@ import java.util.ArrayList;
 import java.util.function.Function;
 
 
-public class A implements Function<Exercise.TestCase, Exercise.TestResult>{
-
-    public static final CaseReader reader = new LineByLineCaseReader(new InputSpaceParsing());
+public class A extends CaseResolver {
 
     public static void main(String[] args) throws IOException {
-
         A solver = new A();
-        new ExerciseResolver("src/main/resources/A-small-practice", solver, reader).resolve();
-        new ExerciseResolver("src/main/resources/A-large-practice", solver, reader).resolve();
+        new ExerciseResolver("A-small-practice", solver).resolve();
+        new ExerciseResolver("A-large-practice", solver).resolve();
+    }
+
+    public A(){
+        super(new LineByLineCaseReader(new InputSpaceParsing()));
     }
 
 
