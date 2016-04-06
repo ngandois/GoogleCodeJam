@@ -2,12 +2,7 @@ package org.ngandois.gcd.tools;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.LongSummaryStatistics;
-import java.util.StringJoiner;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Collector;
 
 public class ResultWriter {
 
@@ -15,7 +10,7 @@ public class ResultWriter {
     private AtomicInteger currentNbResults = new AtomicInteger(0);
     private String fileName;
 
-    private static final String outputFolder =  "exercise-output";
+    private static final String outputFolder = "exercise-output";
 
     public ResultWriter(int nbCases, String fileName) throws IOException {
         this.fileName = String.join("/", "exercise-output", fileName);
@@ -36,10 +31,14 @@ public class ResultWriter {
             tmp.append(result).append(" ");
         }
         tmp.setLength(tmp.length() - 1);
-        tmp.append("\n");
+
+        if (caseNb != this.results.length)
+            tmp.append("\n"); // no carriage return for the latest result
+
+
         this.results[caseNb - 1] = tmp.toString();
 
-        if (currentNbResults.addAndGet(1) == this.results.length) {
+        if (currentNbResults.incrementAndGet() == this.results.length) {
             flush();
         }
     }

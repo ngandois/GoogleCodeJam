@@ -22,6 +22,11 @@ public class Exercise {
             this.testNumber = testNumber;
             this.data = data;
         }
+
+        @Override
+        public String toString() {
+            return testNumber + "# : " + data;
+        }
     }
 
     public static class TestResult {
@@ -29,7 +34,7 @@ public class Exercise {
         public final int testNumber;
         public final String[] results;
 
-        public TestResult(int testNumber, String[] results) {
+        public TestResult(int testNumber, String... results) {
             this.testNumber = testNumber;
             this.results = results;
         }

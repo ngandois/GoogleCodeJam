@@ -21,7 +21,7 @@ public class ExerciseResolver {
 
     public void resolve() {
         long b = System.currentTimeMillis();
-        exercise.cases.stream().map(caseResolver).forEach((r) -> writer.write(r.testNumber, r.results));
+        exercise.cases.stream().map((c) -> {System.out.println("solving " + c); return caseResolver.apply(c);}).forEach((r) -> writer.write(r.testNumber, r.results));
         System.out.printf("took %dms to solve %d test cases\n", (System.currentTimeMillis() - b), exercise.nbCase);
     }
 }
