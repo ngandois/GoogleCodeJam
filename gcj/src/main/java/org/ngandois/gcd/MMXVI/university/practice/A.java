@@ -11,6 +11,9 @@ public class A extends CaseResolver {
     public static void main(String[] args) throws IOException {
         A solver = new A();
         new ExerciseResolver("A-small-practice-1", solver).resolve();
+
+        // MUST not try to create all possibilities
+        // BUT must try a solution and if fail try another one until no more possible solution
         //new ExerciseResolver("A-small-practice-2", solver).resolve();
     }
 
@@ -20,10 +23,6 @@ public class A extends CaseResolver {
 
     @Override
     public Exercise.TestResult apply(Exercise.TestCase aCase) {
-
-        /*if (c.data.size() < 3) {
-            new Exercise.TestResult(c.testNumber, yes);
-        }*/
 
         Collection<Map.Entry<Collection<String>, Collection<String>>> possibleGroups = new LinkedList<>();
         for (ArrayList<String> d : aCase.data) {
@@ -75,7 +74,6 @@ public class A extends CaseResolver {
                 }
 
                 possibleGroups.addAll(newPossibleGroups);
-                System.out.println("size = " + possibleGroups.size());
             }
             if (possibleGroups.isEmpty()) { //removed the last group, no more possibility
                 break;
