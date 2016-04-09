@@ -1,10 +1,9 @@
-package org.ngandois.gcd.MMXV.qualif.A;
+package org.ngandois.gcd.MMXV.qualif;
 
 import org.ngandois.gcd.tools.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.function.Function;
 
 
 public class A extends CaseResolver {
@@ -40,6 +39,6 @@ public class A extends CaseResolver {
             nbStandUp += nextNbStandUp;
         }
 
-        return new Exercise.TestResult(c.testNumber, new String[]{String.valueOf(nbToInvite)});
+        return new Exercise.TestResult(c.testNumber, String.valueOf(nbToInvite));
     }
 }

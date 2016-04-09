@@ -1,7 +1,7 @@
 package org.ngandois.gcd;
 
 import org.junit.Test;
-import org.ngandois.gcd.MMXV.qualif.A.A;
+import org.ngandois.gcd.MMXV.qualif.A;
 import org.ngandois.gcd.tools.ExerciseResolver;
 
 import java.io.File;
