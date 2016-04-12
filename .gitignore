@@ -1,0 +1,6 @@
+.idea
+/gcj/.idea
+/gcj/build
+/gcj/gradle
+/gcj/*.iml
+/gcj/.gradle
