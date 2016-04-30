@@ -5,7 +5,15 @@ public class ReadNbLineFirstCaseReader implements CaseReader {
     private int nbLineTarget;
     private int nbLineCurrent;
 
-    private InputParser inputParser;
+    private int factor;
+    private int offset;
+    private final InputParser inputParser;
+
+    public ReadNbLineFirstCaseReader(int factor, int offset, InputParser inputParser) {
+        this.factor = factor;
+        this.offset = offset;
+        this.inputParser = inputParser;
+    }
 
     public ReadNbLineFirstCaseReader(InputParser inputParser) {
         this.inputParser = inputParser;
@@ -14,7 +22,7 @@ public class ReadNbLineFirstCaseReader implements CaseReader {
     @Override
     public String[] read(String inputLine) {
         if (nbLineTarget <= 0) { // just read the number of lines to retrieve then
-            nbLineTarget = Integer.parseInt(inputLine);
+            nbLineTarget = Integer.parseInt(inputLine) * factor + offset;
             return new String[0];
         }
 
