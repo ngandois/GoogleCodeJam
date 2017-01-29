@@ -3,18 +3,19 @@ package org.ngandois.gcd.MMXVI.university.practice;
 import org.ngandois.gcd.tools.*;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.List;
 
-
+// Practice Round APAC test 2016
 public class A extends CaseResolver {
+
 
     public static void main(String[] args) throws IOException {
         A solver = new A();
-        new ExerciseResolver("A-small-practice-1", solver).resolve();
-
-        // MUST not try to create all possibilities
-        // BUT must try a solution and if fail try another one until no more possible solution
-        //new ExerciseResolver("A-small-practice-2", solver).resolve();
+        //new ExerciseResolver("A-small-practice-1", solver).resolve();
+        new ExerciseResolver("A-small-practice-2", solver).resolve();
     }
 
     public A() {
@@ -23,90 +24,103 @@ public class A extends CaseResolver {
 
     @Override
     public Exercise.TestResult apply(Exercise.TestCase aCase) {
+        Deque<Possibility> possibilities = new LinkedList<>();
 
-        Collection<Map.Entry<Collection<String>, Collection<String>>> possibleGroups = new LinkedList<>();
-        for (ArrayList<String> d : aCase.data) {
-            if (possibleGroups.isEmpty()) {
-                possibleGroups.add(init(d));
-            } else {
-                String p1 = d.get(0);
-                String p2 = d.get(1);
+        // init
+        ArrayList<String> line = aCase.data.get(0);
+        List<String> g1 = new LinkedList<>();
+        g1.add(line.get(0));
+        List<String> g2 = new LinkedList<>();
+        g2.add(line.get(1));
 
-                Collection<Map.Entry<Collection<String>, Collection<String>>> newPossibleGroups = new LinkedList<>();
-                Iterator<Map.Entry<Collection<String>, Collection<String>>> it = possibleGroups.iterator();
-                while (it.hasNext()) {
-                    Map.Entry<Collection<String>, Collection<String>> pairs = it.next();
-                    Collection<String> g1 = pairs.getKey();
-                    Collection<String> g2 = pairs.getValue();
+        possibilities.offer(new Possibility(g1, g2, 1));
 
-                    byte c = 0;
-                    c |= g1.contains(p1) ? 0b1000 : 0;
-                    c |= g2.contains(p1) ? 0b0100 : 0;
-                    c |= g1.contains(p2) ? 0b0010 : 0;
-                    c |= g2.contains(p2) ? 0b0001 : 0;
 
-                    switch (c) {
-                        case 0:
-                            newPossibleGroups.add(duplicatePair(pairs, d));
-                            break;
-                        case 1:
-                            g1.add(p1);
-                            break;
-                        case 2:
-                            g2.add(p1);
-                            break;
-                        case 4:
-                            g1.add(p2);
-                            break;
-                        case 5:
-                            it.remove();
-                            break;
-                        case 8:
-                            g2.add(p2);
-                            break;
-                        case 10:
-                            it.remove();
-                            break;
-                        default:
-                            new Exercise.TestResult(aCase.testNumber, "ERROR");
+        boolean ok;
+        do {
+            ok = test(aCase, possibilities.poll(), possibilities);
+        } while (!ok && !possibilities.isEmpty());
 
-                    }
-                }
 
-                possibleGroups.addAll(newPossibleGroups);
-            }
-            if (possibleGroups.isEmpty()) { //removed the last group, no more possibility
-                break;
+        return new Exercise.TestResult(aCase.testNumber, ok ? "Yes" : "No");
+
+    }
+
+    private boolean test(Exercise.TestCase aCase, Possibility possibility, Deque<Possibility> possibilities) {
+
+        for (int i = possibility.nextIndex; i < aCase.data.size(); i++) {
+            ArrayList<String> line = aCase.data.get(i);
+
+            String n1 = line.get(0);
+            String n2 = line.get(1);
+
+            byte c = 0; // 0
+            c |= possibility.group1.contains(n1) ? 0b1000 : 0; // 8
+            c |= possibility.group2.contains(n1) ? 0b0100 : 0; // 4
+            c |= possibility.group1.contains(n2) ? 0b0010 : 0; // 2
+            c |= possibility.group2.contains(n2) ? 0b0001 : 0; // 1
+
+            switch (c) {
+                case 0:
+                    // two possibilities
+                    // take one
+                    // record the other one
+                    possibilities.offer(possibility.clone(i + 1, n1, n2));
+
+                    possibility.group1.add(n2);
+                    possibility.group2.add(n1);
+                    break;
+                case 1:
+                    possibility.group1.add(n1);
+                    break;
+                case 2:
+                    possibility.group2.add(n1);
+                    break;
+                case 4:
+                    possibility.group1.add(n2);
+                    break;
+                case 5:
+                    return false;
+                case 6:
+                    break; // already dispatched
+                case 8:
+                    possibility.group2.add(n2);
+                    break;
+                case 9:
+                    break; // already dispatched
+                case 10:
+                    return false;
+                default:
+                    throw new RuntimeException("not managed: " + c);
+
             }
         }
-
-        return new Exercise.TestResult(aCase.testNumber, possibleGroups.isEmpty() ? "No" : "Yes");
-
-    }
-
-    private Map.Entry<Collection<String>, Collection<String>> init(ArrayList<String> d) {
-        Collection<String> g1 = new HashSet<>();
-        g1.add(d.get(0));
-        Collection<String> g2 = new HashSet<>();
-        g2.add(d.get(1));
-
-        return new HashMap.SimpleEntry<>(g1, g2);
+        return true; //dispatched all
     }
 
 
-    private Map.Entry<Collection<String>, Collection<String>> duplicatePair(Map.Entry<Collection<String>, Collection<String>> pairs, ArrayList<String> d) {
-        String p1 = d.get(0);
-        String p2 = d.get(1);
+    private static class Possibility {
+        final List<String> group1;
+        final List<String> group2;
+        final int nextIndex;
 
-        Map.Entry<Collection<String>, Collection<String>> duplicated = new HashMap.SimpleEntry<>(new HashSet<>(pairs.getKey()), new HashSet<>(pairs.getValue()));
+        private Possibility(List<String> group1, List<String> group2, int nextIndex) {
+            this.group1 = group1;
+            this.group2 = group2;
+            this.nextIndex = nextIndex;
+        }
 
-        pairs.getKey().add(p1);
-        pairs.getValue().add(p2);
+        public Possibility clone(int nextIndex, String nG1, String nG2) {
+            List<String> group1 = new LinkedList<>(this.group1);
+            group1.add(nG1);
 
-        duplicated.getKey().add(p2);
-        duplicated.getValue().add(p1);
+            List<String> group2 = new LinkedList<>(this.group2);
+            group2.add(nG2);
 
-        return duplicated;
+            return new Possibility(group1, group2, nextIndex);
+        }
+
     }
+
 
 }

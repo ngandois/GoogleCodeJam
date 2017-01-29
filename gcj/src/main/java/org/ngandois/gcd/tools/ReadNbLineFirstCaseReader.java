@@ -5,8 +5,8 @@ public class ReadNbLineFirstCaseReader implements CaseReader {
     private int nbLineTarget;
     private int nbLineCurrent;
 
-    private int factor;
-    private int offset;
+    private int factor = 1;
+    private int offset = 0;
     private final InputParser inputParser;
 
     public ReadNbLineFirstCaseReader(int factor, int offset, InputParser inputParser) {
