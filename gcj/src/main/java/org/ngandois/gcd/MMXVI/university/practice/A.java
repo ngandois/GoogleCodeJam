@@ -1,6 +1,12 @@
 package org.ngandois.gcd.MMXVI.university.practice;
 
-import org.ngandois.gcd.tools.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.ngandois.gcd.tools.CaseResolver;
+import org.ngandois.gcd.tools.Exercise;
+import org.ngandois.gcd.tools.ExerciseResolver;
+import org.ngandois.gcd.tools.InputSpaceParsing;
+import org.ngandois.gcd.tools.ReadNbLineFirstCaseReader;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,6 +17,7 @@ import java.util.List;
 // Practice Round APAC test 2016
 public class A extends CaseResolver {
 
+    private static final Logger log = LogManager.getLogger(A.class);
 
     public static void main(String[] args) throws IOException {
         A solver = new A();
@@ -38,6 +45,7 @@ public class A extends CaseResolver {
 
         boolean ok;
         do {
+            log.info(possibilities.size() + " possibilities");
             ok = test(aCase, possibilities.poll(), possibilities);
         } while (!ok && !possibilities.isEmpty());
 
