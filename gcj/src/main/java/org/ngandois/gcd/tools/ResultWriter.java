@@ -10,8 +10,6 @@ public class ResultWriter {
     private AtomicInteger currentNbResults = new AtomicInteger(0);
     private String fileName;
 
-    private static final String outputFolder = "exercise-output";
-
     public ResultWriter(int nbCases, String fileName) throws IOException {
         this.fileName = String.join("/", "exercise-output", fileName);
         results = new String[nbCases];
@@ -44,7 +42,7 @@ public class ResultWriter {
     }
 
 
-    private void flush() {
+    private synchronized void flush() {
         try {
             FileWriter w = new FileWriter(fileName);
 

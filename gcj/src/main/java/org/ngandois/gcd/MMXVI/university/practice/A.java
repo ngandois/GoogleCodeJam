@@ -1,7 +1,5 @@
 package org.ngandois.gcd.MMXVI.university.practice;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.ngandois.gcd.tools.CaseResolver;
 import org.ngandois.gcd.tools.Exercise;
 import org.ngandois.gcd.tools.ExerciseResolver;
@@ -14,10 +12,8 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
-// Practice Round APAC test 2016
+// Practice Round APAC test 2016: too slow but do the job :(
 public class A extends CaseResolver {
-
-    private static final Logger log = LogManager.getLogger(A.class);
 
     public static void main(String[] args) throws IOException {
         A solver = new A();
@@ -39,14 +35,11 @@ public class A extends CaseResolver {
         g1.add(line.get(0));
         List<String> g2 = new LinkedList<>();
         g2.add(line.get(1));
-
         possibilities.offer(new Possibility(g1, g2, 1));
-
 
         boolean ok;
         do {
-            log.info(possibilities.size() + " possibilities");
-            ok = test(aCase, possibilities.poll(), possibilities);
+            ok = test(aCase, possibilities.pollLast(), possibilities);
         } while (!ok && !possibilities.isEmpty());
 
 
@@ -55,7 +48,6 @@ public class A extends CaseResolver {
     }
 
     private boolean test(Exercise.TestCase aCase, Possibility possibility, Deque<Possibility> possibilities) {
-
         for (int i = possibility.nextIndex; i < aCase.data.size(); i++) {
             ArrayList<String> line = aCase.data.get(i);
 
@@ -71,8 +63,8 @@ public class A extends CaseResolver {
             switch (c) {
                 case 0:
                     // two possibilities
-                    // take one
-                    // record the other one
+                    //  - take one
+                    //  - record the other one
                     possibilities.offer(possibility.clone(i + 1, n1, n2));
 
                     possibility.group1.add(n2);
@@ -118,7 +110,7 @@ public class A extends CaseResolver {
             this.nextIndex = nextIndex;
         }
 
-        public Possibility clone(int nextIndex, String nG1, String nG2) {
+        private Possibility clone(int nextIndex, String nG1, String nG2) {
             List<String> group1 = new LinkedList<>(this.group1);
             group1.add(nG1);
 
@@ -127,8 +119,5 @@ public class A extends CaseResolver {
 
             return new Possibility(group1, group2, nextIndex);
         }
-
     }
-
-
 }

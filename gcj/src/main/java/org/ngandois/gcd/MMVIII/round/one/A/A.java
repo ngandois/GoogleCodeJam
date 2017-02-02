@@ -1,15 +1,16 @@
 package org.ngandois.gcd.MMVIII.round.one.A;
 
-import org.ngandois.gcd.tools.*;
+import org.ngandois.gcd.tools.CaseResolver;
+import org.ngandois.gcd.tools.Exercise;
+import org.ngandois.gcd.tools.ExerciseResolver;
+import org.ngandois.gcd.tools.InputSpaceParsing;
+import org.ngandois.gcd.tools.SkipOneReadXCaseReader;
 
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
 
 
 public class A extends CaseResolver {
