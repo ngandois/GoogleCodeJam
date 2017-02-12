@@ -17,24 +17,21 @@ public class ResultWriter {
 
     /**
      * The thread writing the latest test case result will flush the content on the disk
-     *
-     * @param caseNb  The test case number
-     * @param results The results to write (will be separated by a space)
      */
-    public void write(int caseNb, String... results) {
+    public void write(Exercise.TestResult result) {
         StringBuilder tmp = new StringBuilder(20);
-        tmp.append("Case #").append(String.valueOf(caseNb)).append(": ");
+        tmp.append("Case #").append(String.valueOf(result.testNumber)).append(": ");
 
-        for (String result : results) {
-            tmp.append(result).append(" ");
+        for (String r : result.results) {
+            tmp.append(r).append(" ");
         }
         tmp.setLength(tmp.length() - 1);
 
-        if (caseNb != this.results.length)
+        if (result.testNumber != this.results.length)
             tmp.append("\n"); // no carriage return for the latest result
 
 
-        this.results[caseNb - 1] = tmp.toString();
+        this.results[result.testNumber - 1] = tmp.toString();
 
         if (currentNbResults.incrementAndGet() == this.results.length) {
             flush();

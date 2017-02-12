@@ -1,18 +1,16 @@
 package org.ngandois.gcd.tools;
 
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.ngandois.gcd.MMXVI.university.practice.A;
+
+import java.io.IOException;
 
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class ExerciseResolver {
 
-    private static final Logger log = LogManager.getLogger(A.class);
+    private static final Logger log = LogManager.getLogger(ExerciseResolver.class);
 
     private final Exercise exercise;
     private final ResultWriter writer;
@@ -31,7 +29,7 @@ public class ExerciseResolver {
         exercise.cases.stream().map((c) -> {
             log.info("solving #{}", c.testNumber);
             return caseResolver.apply(c);
-        }).forEach((r) -> writer.write(r.testNumber, r.results));
+        }).forEach(writer::write);
         log.info("took {}s to solve {} test cases", SECONDS.convert(System.currentTimeMillis() - b, MILLISECONDS), exercise.nbCase);
     }
 }

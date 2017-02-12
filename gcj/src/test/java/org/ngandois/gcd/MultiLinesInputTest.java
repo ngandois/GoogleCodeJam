@@ -1,7 +1,7 @@
 package org.ngandois.gcd;
 
 import org.junit.Test;
-import org.ngandois.gcd.MMXVI.university.practice.A;
+import org.ngandois.gcd.MMXVI.university.practice.A_BadHorse;
 import org.ngandois.gcd.tools.ExerciseResolver;
 
 import java.io.File;
@@ -13,7 +13,7 @@ public class MultiLinesInputTest {
 
     @Test
     public void executeAndCheckOutput() throws IOException {
-        new ExerciseResolver("MultiLinesInputTest", new A()).resolve();
+        new ExerciseResolver("MultiLinesInputTest", new A_BadHorse()).resolve();
 
         File refFile = new File("src/test/resources/MultiLinesInputTest.out-reference.txt");
         File expectedFile = new File("exercise-output/MultiLinesInputTest.out.txt");

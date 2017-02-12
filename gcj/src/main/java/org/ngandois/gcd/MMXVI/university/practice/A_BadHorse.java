@@ -12,16 +12,16 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
-// Practice Round APAC test 2016: too slow but do the job :(
-public class A extends CaseResolver {
+// Practice Round APAC test 2016: slow but do the job :(
+public class A_BadHorse extends CaseResolver {
 
     public static void main(String[] args) throws IOException {
-        A solver = new A();
+        A_BadHorse solver = new A_BadHorse();
         //new ExerciseResolver("A-small-practice-1", solver).resolve();
         new ExerciseResolver("A-small-practice-2", solver).resolve();
     }
 
-    public A() {
+    public A_BadHorse() {
         super(new ReadNbLineFirstCaseReader(new InputSpaceParsing()));
     }
 
