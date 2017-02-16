@@ -6,7 +6,6 @@ import org.apache.logging.log4j.Logger;
 import java.io.IOException;
 
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
-import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class ExerciseResolver {
 
@@ -20,16 +19,13 @@ public class ExerciseResolver {
     public ExerciseResolver(String fileInput, CaseResolver caseResolver) throws IOException {
         this.caseResolver = caseResolver;
         exercise = ExerciseReader.createExercise(fileInput + ".in.txt", caseResolver.getReader());
-        writer = new ResultWriter(exercise.nbCase, fileInput + ".out.txt");
+        writer = new ResultWriter(exercise.getNbCases(), fileInput + ".out.txt");
     }
 
 
     public void resolve() {
         long b = System.currentTimeMillis();
-        exercise.cases.stream().map((c) -> {
-            log.info("solving #{}", c.testNumber);
-            return caseResolver.apply(c);
-        }).forEach(writer::write);
-        log.info("took {}s to solve {} test cases", SECONDS.convert(System.currentTimeMillis() - b, MILLISECONDS), exercise.nbCase);
+        exercise.cases.parallelStream().map(caseResolver).forEach(writer);
+        log.info("took {}s to solve {} test cases", MILLISECONDS.toSeconds(System.currentTimeMillis() - b), exercise.getNbCases());
     }
 }

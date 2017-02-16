@@ -22,12 +22,12 @@ public class ExerciseReader {
 
         List<String> lines = Files.readAllLines(p);
 
-        String sNbTest = lines.remove(0);
+        lines.remove(0); // nb tests
         int testCount = 1;
 
         List<Exercise.TestCase> testCases = new LinkedList<>();
 
-        ArrayList<ArrayList<String>> data = new ArrayList<>();
+        List<List<String>> data = new ArrayList<>();
         for (String line : lines) {
             String[] d = caseReader.read(line);
             if (d.length == 0)
@@ -41,13 +41,11 @@ public class ExerciseReader {
             }
         }
 
-        return new Exercise(Integer.parseInt(sNbTest), testCases);
+        return new Exercise(testCases);
     }
 
 
-    private static ArrayList<String> translate(String[] d) {
-        @SuppressWarnings("unchecked") ArrayList<String> t = new ArrayList(d.length);
-        Arrays.stream(d).collect(Collectors.toCollection(() -> t));
-        return t;
+    private static List<String> translate(String[] d) {
+        return Arrays.stream(d).collect(Collectors.toList());
     }
 }

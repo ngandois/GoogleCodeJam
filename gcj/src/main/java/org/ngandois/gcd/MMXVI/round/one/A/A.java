@@ -3,11 +3,6 @@ package org.ngandois.gcd.MMXVI.round.one.A;
 import org.ngandois.gcd.tools.*;
 
 import java.io.IOException;
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.stream.IntStream;
 
 
 public class A extends CaseResolver {
@@ -23,7 +18,7 @@ public class A extends CaseResolver {
 
 
     @Override
-    public Exercise.TestResult apply(Exercise.TestCase c) {
+    public Exercise.TestResult solve(Exercise.TestCase c) {
         char[] chars = c.data.get(0).get(0).toCharArray();
 
         StringBuilder buf = new StringBuilder(chars.length);

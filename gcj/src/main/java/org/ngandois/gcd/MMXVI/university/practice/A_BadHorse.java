@@ -7,7 +7,6 @@ import org.ngandois.gcd.tools.InputSpaceParsing;
 import org.ngandois.gcd.tools.ReadNbLineFirstCaseReader;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
@@ -26,11 +25,11 @@ public class A_BadHorse extends CaseResolver {
     }
 
     @Override
-    public Exercise.TestResult apply(Exercise.TestCase aCase) {
+    public Exercise.TestResult solve(Exercise.TestCase aCase) {
         Deque<Possibility> possibilities = new LinkedList<>();
 
         // init
-        ArrayList<String> line = aCase.data.get(0);
+        List<String> line = aCase.data.get(0);
         List<String> g1 = new LinkedList<>();
         g1.add(line.get(0));
         List<String> g2 = new LinkedList<>();
@@ -49,7 +48,7 @@ public class A_BadHorse extends CaseResolver {
 
     private boolean test(Exercise.TestCase aCase, Possibility possibility, Deque<Possibility> possibilities) {
         for (int i = possibility.nextIndex; i < aCase.data.size(); i++) {
-            ArrayList<String> line = aCase.data.get(i);
+            List<String> line = aCase.data.get(i);
 
             String n1 = line.get(0);
             String n2 = line.get(1);

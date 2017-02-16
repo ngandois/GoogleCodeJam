@@ -27,7 +27,7 @@ public class C extends CaseResolver {
 
 
     @Override
-    public Exercise.TestResult apply(Exercise.TestCase c) {
+    public Exercise.TestResult solve(Exercise.TestCase c) {
         StringBuilder result = new StringBuilder();
         int N = Integer.parseInt(c.data.get(0).get(0));
         int J = Integer.parseInt(c.data.get(0).get(1));

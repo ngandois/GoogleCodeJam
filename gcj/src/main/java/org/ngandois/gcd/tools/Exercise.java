@@ -1,24 +1,25 @@
 package org.ngandois.gcd.tools;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Exercise {
-    public final int nbCase;
     public final List<TestCase> cases;
 
-    public Exercise(int nbCase, List<TestCase> cases) {
-        this.nbCase = nbCase;
+    public Exercise(List<TestCase> cases) {
         this.cases = cases;
+    }
+
+    public int getNbCases(){
+        return cases.size();
     }
 
 
     public static class TestCase {
 
         public final int testNumber;
-        public final ArrayList<ArrayList<String>> data;
+        public final List<List<String>> data;
 
-        public TestCase(int testNumber, ArrayList<ArrayList<String>> data) {
+        public TestCase(int testNumber, List<List<String>> data) {
             this.testNumber = testNumber;
             this.data = data;
         }

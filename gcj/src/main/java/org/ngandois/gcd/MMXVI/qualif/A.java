@@ -20,7 +20,7 @@ public class A extends CaseResolver {
 
 
     @Override
-    public Exercise.TestResult apply(Exercise.TestCase c) {
+    public Exercise.TestResult solve(Exercise.TestCase c) {
         Set<Character> seen = new HashSet<>();
         int i = 0;
         long N = Long.parseLong(c.data.get(0).get(0));

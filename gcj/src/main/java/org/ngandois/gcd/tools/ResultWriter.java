@@ -3,14 +3,15 @@ package org.ngandois.gcd.tools;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Consumer;
 
-public class ResultWriter {
+public class ResultWriter implements Consumer<Exercise.TestResult>{
 
     private final String[] results;
-    private AtomicInteger currentNbResults = new AtomicInteger(0);
-    private String fileName;
+    private final AtomicInteger currentNbResults = new AtomicInteger(0);
+    private final String fileName;
 
-    public ResultWriter(int nbCases, String fileName) throws IOException {
+    public ResultWriter(int nbCases, String fileName) {
         this.fileName = String.join("/", "exercise-output", fileName);
         results = new String[nbCases];
     }
@@ -18,7 +19,7 @@ public class ResultWriter {
     /**
      * The thread writing the latest test case result will flush the content on the disk
      */
-    public void write(Exercise.TestResult result) {
+    public void accept(Exercise.TestResult result) {
         StringBuilder tmp = new StringBuilder(20);
         tmp.append("Case #").append(String.valueOf(result.testNumber)).append(": ");
 

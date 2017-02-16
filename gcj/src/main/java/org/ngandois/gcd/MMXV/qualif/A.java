@@ -3,7 +3,7 @@ package org.ngandois.gcd.MMXV.qualif;
 import org.ngandois.gcd.tools.*;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.List;
 
 
 public class A extends CaseResolver {
@@ -20,11 +20,11 @@ public class A extends CaseResolver {
 
 
     @Override
-    public Exercise.TestResult apply(Exercise.TestCase c) {
+    public Exercise.TestResult solve(Exercise.TestCase c) {
         int nbStandUp = 0;
         int nbToInvite = 0;
 
-        ArrayList<String> data = c.data.get(0);
+        List<String> data = c.data.get(0);
 
         int maxShyness = Integer.parseInt(data.get(0));
         char[] people =  data.get(1).toCharArray();

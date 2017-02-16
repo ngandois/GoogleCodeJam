@@ -1,15 +1,11 @@
 package org.ngandois.gcd.MMVIII.round.one.A;
 
-import org.ngandois.gcd.tools.CaseResolver;
-import org.ngandois.gcd.tools.Exercise;
-import org.ngandois.gcd.tools.ExerciseResolver;
-import org.ngandois.gcd.tools.InputSpaceParsing;
-import org.ngandois.gcd.tools.SkipOneReadXCaseReader;
+import org.ngandois.gcd.tools.*;
 
 import java.io.IOException;
 import java.math.BigInteger;
-import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 import java.util.stream.IntStream;
 
 
@@ -26,9 +22,9 @@ public class A extends CaseResolver {
 
 
     @Override
-    public Exercise.TestResult apply(Exercise.TestCase c) {
-        ArrayList<String> v1 = c.data.get(0);
-        ArrayList<String> v2 = c.data.get(1);
+    public Exercise.TestResult solve(Exercise.TestCase c) {
+        List<String> v1 = c.data.get(0);
+        List<String> v2 = c.data.get(1);
 
         Integer[] sorted = v1.stream().map(Integer::parseInt).sorted().toArray(Integer[]::new);
         Integer[] reverse = v2.stream().map(Integer::parseInt).sorted(Comparator.reverseOrder()).toArray(Integer[]::new);

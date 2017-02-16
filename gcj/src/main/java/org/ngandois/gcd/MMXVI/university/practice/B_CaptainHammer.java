@@ -18,7 +18,7 @@ public class B_CaptainHammer extends CaseResolver {
     }
 
     @Override
-    public Exercise.TestResult apply(Exercise.TestCase aCase) {
+    public Exercise.TestResult solve(Exercise.TestCase aCase) {
         double v = Double.parseDouble(aCase.data.get(0).get(0));
         double d = Double.parseDouble(aCase.data.get(0).get(1));
 

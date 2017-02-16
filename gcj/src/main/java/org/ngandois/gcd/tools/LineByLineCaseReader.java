@@ -2,7 +2,7 @@ package org.ngandois.gcd.tools;
 
 public class LineByLineCaseReader implements CaseReader {
 
-    private InputParser inputParser;
+    private final InputParser inputParser;
 
     public LineByLineCaseReader(InputParser inputParser) {
         this.inputParser = inputParser;

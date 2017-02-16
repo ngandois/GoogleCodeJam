@@ -1,5 +1,6 @@
 package org.ngandois.gcd.tools;
 
+@SuppressWarnings("unused")
 public class ReadNbLineFirstCaseReader implements CaseReader {
 
     private int nbLineTarget;

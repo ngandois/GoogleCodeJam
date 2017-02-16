@@ -2,10 +2,10 @@ package org.ngandois.gcd.tools;
 
 public class SkipOneReadXCaseReader implements CaseReader {
 
-    private int nbRowToRead;
+    private final int nbRowToRead;
     private int nbLineCurrent;
 
-    private InputParser inputParser;
+    private final InputParser inputParser;
 
     public SkipOneReadXCaseReader(int nbRowToRead, InputParser inputParser) {
         this.nbRowToRead = nbRowToRead;

@@ -31,7 +31,7 @@ public class A extends CaseResolver {
 
 
     @Override
-    public Exercise.TestResult apply(Exercise.TestCase c) {
+    public Exercise.TestResult solve(Exercise.TestCase c) {
         Collection<Character> chars = new LinkedList<>();
 
         char[] toCharArray = c.data.get(0).get(0).toCharArray();

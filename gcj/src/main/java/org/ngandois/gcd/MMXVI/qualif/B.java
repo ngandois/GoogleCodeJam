@@ -18,7 +18,7 @@ public class B extends CaseResolver {
 
 
     @Override
-    public Exercise.TestResult apply(Exercise.TestCase c) {
+    public Exercise.TestResult solve(Exercise.TestCase c) {
         char[] chars = c.data.get(0).get(0).toCharArray();
 
         long step = 0;
