@@ -26,7 +26,7 @@ public class Exercise {
 
         @Override
         public String toString() {
-            return testNumber + "# : " + data;
+            return "#" + testNumber + ": " + data;
         }
     }
 
@@ -34,10 +34,19 @@ public class Exercise {
 
         public final int testNumber;
         public final String[] results;
+        private boolean invalid;
 
         public TestResult(int testNumber, String... results) {
             this.testNumber = testNumber;
             this.results = results;
+        }
+
+        public void setInvalid(){
+            invalid = true;
+        }
+
+        public boolean isInvalid(){
+            return invalid;
         }
 
     }

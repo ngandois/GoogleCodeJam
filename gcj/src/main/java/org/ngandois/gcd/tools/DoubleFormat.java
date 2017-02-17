@@ -10,6 +10,9 @@ public class DoubleFormat {
      * @return format double as Google Code Jam standard
      */
     public static String format(double d) {
+        if(Double.isNaN(d) || Double.isInfinite(d))
+            throw new RuntimeException("invalid double:"+d);
+
         return String.format(Locale.ENGLISH, "%.8f", d);
     }
 

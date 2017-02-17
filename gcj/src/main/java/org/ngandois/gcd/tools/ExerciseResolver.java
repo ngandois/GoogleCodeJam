@@ -26,6 +26,10 @@ public class ExerciseResolver {
     public void resolve() {
         long b = System.currentTimeMillis();
         exercise.cases.parallelStream().map(caseResolver).forEach(writer);
-        log.info("took {}s to solve {} test cases", MILLISECONDS.toSeconds(System.currentTimeMillis() - b), exercise.getNbCases());
+
+        if (writer.hasReceivedError())
+            log.fatal("!!! error(s) received, check logs and/or output file !!!");
+        else
+            log.info("took {}s to solve {} test cases", MILLISECONDS.toSeconds(System.currentTimeMillis() - b), exercise.getNbCases());
     }
 }
