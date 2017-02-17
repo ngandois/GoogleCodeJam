@@ -22,7 +22,7 @@ public abstract class CaseResolver implements Function<Exercise.TestCase, Exerci
 
 
     @Override
-    public Exercise.TestResult apply(Exercise.TestCase testCase) {
+    public final Exercise.TestResult apply(Exercise.TestCase testCase) {
         long b = System.currentTimeMillis();
         log.info("solving #{}...", testCase.testNumber);
         Exercise.TestResult result = solve(testCase);
