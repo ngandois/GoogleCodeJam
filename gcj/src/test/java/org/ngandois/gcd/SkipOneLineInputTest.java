@@ -11,14 +11,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class SkipOneLineInputTest {
 
-    @Test
-    public void executeAndCheckOutput() throws IOException {
-        new ExerciseResolver("SkipOneLineInputTest", new A()).resolve();
+  @Test
+  public void executeAndCheckOutput() throws IOException {
+    new ExerciseResolver("SkipOneLineInputTest", new A()).resolve();
 
-        File refFile = new File("src/test/resources/SkipOneLineInputTest.out-reference.txt");
-        File expectedFile = new File("exercise-output/SkipOneLineInputTest.out.txt");
-        assertThat(refFile).hasSameContentAs(expectedFile);
-    }
+    File refFile = new File("src/test/resources/SkipOneLineInputTest.out-reference.txt");
+    File expectedFile = new File("exercise-output/SkipOneLineInputTest.out.txt");
+    assertThat(refFile).hasSameContentAs(expectedFile);
+  }
 }
 
 

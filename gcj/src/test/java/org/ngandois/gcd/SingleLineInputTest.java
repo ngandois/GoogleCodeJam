@@ -11,14 +11,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class SingleLineInputTest {
 
-    @Test
-    public void executeAndCheckOutput() throws IOException {
-        new ExerciseResolver("SingleLineInputTest", new A()).resolve();
+  @Test
+  public void executeAndCheckOutput() throws IOException {
+    new ExerciseResolver("SingleLineInputTest", new A()).resolve();
 
-        File refFile = new File("src/test/resources/SingleLineInputTest.out-reference.txt");
-        File expectedFile = new File("exercise-output/SingleLineInputTest.out.txt");
-        assertThat(refFile).hasSameContentAs(expectedFile);
-    }
+    File refFile = new File("src/test/resources/SingleLineInputTest.out-reference.txt");
+    File expectedFile = new File("exercise-output/SingleLineInputTest.out.txt");
+    assertThat(refFile).hasSameContentAs(expectedFile);
+  }
 }
 
 

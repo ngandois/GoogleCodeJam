@@ -2,7 +2,7 @@ package org.ngandois.gcd.tools;
 
 public interface CaseReader {
 
-    String[] read(String inputLine);
+  String[] read(String inputLine);
 
-    boolean accumulate();
+  boolean accumulate();
 }
