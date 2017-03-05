@@ -1,4 +1,4 @@
-package org.ngandois.gcd.MMXVI.qualif;
+package org.ngandois.gcd.problem;
 
 import org.ngandois.gcd.tools.CaseResolver;
 import org.ngandois.gcd.tools.ExerciseResolver;
@@ -9,14 +9,14 @@ import java.io.IOException;
 import java.util.List;
 
 
-public class B extends CaseResolver {
+public class RevengeOfThePancakes extends CaseResolver {
 
   public static void main(String[] args) throws IOException {
-    B solver = new B();
+    RevengeOfThePancakes solver = new RevengeOfThePancakes();
     new ExerciseResolver("B-large", solver).resolve();
   }
 
-  private B() {
+  private RevengeOfThePancakes() {
     super(new LineByLineCaseReader(new InputSpaceParsing()));
   }
 

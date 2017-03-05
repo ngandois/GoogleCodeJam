@@ -1,4 +1,4 @@
-package org.ngandois.gcd.MMXVI.round.one.B;
+package org.ngandois.gcd.problem;
 
 import org.ngandois.gcd.tools.CaseResolver;
 import org.ngandois.gcd.tools.ExerciseResolver;
@@ -12,15 +12,14 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-
-public class A extends CaseResolver {
+public class GettingTheDigits extends CaseResolver {
 
   public static void main(String[] args) throws IOException {
-    A solver = new A();
+    GettingTheDigits solver = new GettingTheDigits();
     new ExerciseResolver("A-large-practice", solver).resolve();
   }
 
-  public A() {
+  public GettingTheDigits() {
     super(new LineByLineCaseReader(new InputSpaceParsing()));
   }
 

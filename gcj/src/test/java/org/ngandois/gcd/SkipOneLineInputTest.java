@@ -1,7 +1,7 @@
 package org.ngandois.gcd;
 
 import org.junit.Test;
-import org.ngandois.gcd.MMVIII.round.one.A.A;
+import org.ngandois.gcd.problem.MinimumScalarProduct;
 import org.ngandois.gcd.tools.ExerciseResolver;
 
 import java.io.File;
@@ -13,7 +13,7 @@ public class SkipOneLineInputTest {
 
   @Test
   public void executeAndCheckOutput() throws IOException {
-    new ExerciseResolver("SkipOneLineInputTest", new A()).resolve();
+    new ExerciseResolver("SkipOneLineInputTest", new MinimumScalarProduct()).resolve();
 
     File refFile = new File("src/test/resources/SkipOneLineInputTest.out-reference.txt");
     File expectedFile = new File("exercise-output/SkipOneLineInputTest.out.txt");

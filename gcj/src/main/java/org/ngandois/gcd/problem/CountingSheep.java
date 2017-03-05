@@ -1,4 +1,4 @@
-package org.ngandois.gcd.MMXVI.qualif;
+package org.ngandois.gcd.problem;
 
 import org.ngandois.gcd.tools.CaseResolver;
 import org.ngandois.gcd.tools.ExerciseResolver;
@@ -11,14 +11,14 @@ import java.util.List;
 import java.util.Set;
 
 
-public class A extends CaseResolver {
+public class CountingSheep extends CaseResolver {
 
   public static void main(String[] args) throws IOException {
-    A solver = new A();
+    CountingSheep solver = new CountingSheep();
     new ExerciseResolver("A-large", solver).resolve();
   }
 
-  private A() {
+  private CountingSheep() {
     super(new LineByLineCaseReader(new InputSpaceParsing()));
   }
 

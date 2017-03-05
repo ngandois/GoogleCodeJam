@@ -18,18 +18,20 @@ public class ExerciseResolver {
 
   public ExerciseResolver(String fileInput, CaseResolver caseResolver) throws IOException {
     this.caseResolver = caseResolver;
-    exercise = ExerciseReader.createExercise(fileInput + ".in.txt", caseResolver.getReader());
+    exercise = ExerciseReader.createExercise(fileInput, caseResolver.getReader());
     writer = new ResultWriter(exercise.getNbCases(), fileInput + ".out.txt");
   }
 
 
   public void resolve() {
     long b = System.currentTimeMillis();
-    exercise.cases.parallelStream().map(caseResolver).forEach(writer);
+    exercise.cases.stream().map(caseResolver).forEach(writer);
 
-    if (writer.hasReceivedError())
+    if (writer.hasError())
       log.fatal("!!! error(s) received, check logs and/or output file !!!");
-    else
-      log.info("took {}s to solve {} test cases", MILLISECONDS.toSeconds(System.currentTimeMillis() - b), exercise.getNbCases());
+    else {
+      long end = System.currentTimeMillis() - b;
+      log.info("took {}s ({}ms) to solve {} test cases", MILLISECONDS.toSeconds(end), end, exercise.getNbCases());
+    }
   }
 }

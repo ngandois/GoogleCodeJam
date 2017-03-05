@@ -1,4 +1,4 @@
-package org.ngandois.gcd.MMXVI.qualif;
+package org.ngandois.gcd.problem;
 
 import org.ngandois.gcd.tools.CaseResolver;
 import org.ngandois.gcd.tools.ExerciseResolver;
@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.OptionalLong;
 
 
-public class C extends CaseResolver {
+public class CoinJam extends CaseResolver {
 
   public static void main(String[] args) throws IOException {
-    C solver = new C();
+    CoinJam solver = new CoinJam();
     new ExerciseResolver("C-large", solver).resolve();
 
         /*
@@ -25,7 +25,7 @@ public class C extends CaseResolver {
          */
   }
 
-  private C() {
+  private CoinJam() {
     super(new LineByLineCaseReader(new InputSpaceParsing()));
   }
 

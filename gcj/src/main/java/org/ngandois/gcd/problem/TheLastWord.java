@@ -1,4 +1,4 @@
-package org.ngandois.gcd.MMXVI.round.one.A;
+package org.ngandois.gcd.problem;
 
 import org.ngandois.gcd.tools.CaseResolver;
 import org.ngandois.gcd.tools.ExerciseResolver;
@@ -9,14 +9,14 @@ import java.io.IOException;
 import java.util.List;
 
 
-public class A extends CaseResolver {
+public class TheLastWord extends CaseResolver {
 
   public static void main(String[] args) throws IOException {
-    A solver = new A();
+    TheLastWord solver = new TheLastWord();
     new ExerciseResolver("A-large-practice", solver).resolve();
   }
 
-  public A() {
+  public TheLastWord() {
     super(new LineByLineCaseReader(new InputSpaceParsing()));
   }
 

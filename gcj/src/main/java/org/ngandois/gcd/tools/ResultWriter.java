@@ -25,7 +25,7 @@ public class ResultWriter implements Consumer<Exercise.TestResult> {
     results = new String[nbCases];
   }
 
-  public boolean hasReceivedError() {
+  public boolean hasError() {
     return hasError.get();
   }
 
@@ -45,25 +45,23 @@ public class ResultWriter implements Consumer<Exercise.TestResult> {
 
     if (currentNbResults.incrementAndGet() == this.results.length) {
       log.info("all results received");
-      flush();
+      write();
     } else {
       log.info("still {} cases to solve", this.results.length - currentNbResults.get());
     }
   }
 
 
-  private synchronized void flush() {
-    try {
-      FileWriter w = new FileWriter(fileName);
-
+  private synchronized void write() {
+    try (FileWriter w = new FileWriter(fileName)){
       for (String result : results) {
         w.write(result);
       }
       w.flush();
 
-    } catch (IOException e) {
-      e.printStackTrace();
-      System.exit(-1);
+    } catch (Exception e) {
+      hasError.set(true);
+      log.error("cannot write results", e);
     }
   }
 }

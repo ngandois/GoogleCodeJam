@@ -1,4 +1,4 @@
-package org.ngandois.gcd.MMXVI.university.practice;
+package org.ngandois.gcd.problem;
 
 import org.ngandois.gcd.tools.CaseResolver;
 import org.ngandois.gcd.tools.DoubleFormat;
@@ -10,14 +10,14 @@ import java.io.IOException;
 import java.util.List;
 
 
-public class B_CaptainHammer extends CaseResolver {
+public class CaptainHammer extends CaseResolver {
 
   public static void main(String[] args) throws IOException {
-    B_CaptainHammer solver = new B_CaptainHammer();
+    CaptainHammer solver = new CaptainHammer();
     new ExerciseResolver("B-small-practice", solver).resolve();
   }
 
-  public B_CaptainHammer() {
+  public CaptainHammer() {
     super(new LineByLineCaseReader(new InputSpaceParsing()));
   }
 

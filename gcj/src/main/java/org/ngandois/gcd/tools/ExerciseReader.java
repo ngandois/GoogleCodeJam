@@ -16,9 +16,16 @@ public class ExerciseReader {
   private static final String testResourcesPath = "src/test/resources/";
 
   public static Exercise createExercise(String fileName, CaseReader caseReader) throws IOException {
-    Path p = Paths.get(resourcesPath, fileName);
+    Path p = Paths.get(resourcesPath, fileName + ".in.txt");
+
     if (!Files.exists(p))
-      p = Paths.get(testResourcesPath, fileName);
+      p = Paths.get(resourcesPath, fileName + ".in");
+
+    if (!Files.exists(p))
+      p = Paths.get(testResourcesPath, fileName + ".in.txt");
+
+    if (!Files.exists(p))
+      throw new RuntimeException("no problem or test input found");
 
     List<String> lines = Files.readAllLines(p);
 

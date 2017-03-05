@@ -1,4 +1,4 @@
-package org.ngandois.gcd.MMXV.qualif;
+package org.ngandois.gcd.problem;
 
 import org.ngandois.gcd.tools.CaseResolver;
 import org.ngandois.gcd.tools.ExerciseResolver;
@@ -9,15 +9,15 @@ import java.io.IOException;
 import java.util.List;
 
 
-public class A extends CaseResolver {
+public class StandingOvation extends CaseResolver {
 
   public static void main(String[] args) throws IOException {
-    A solver = new A();
+    StandingOvation solver = new StandingOvation();
     new ExerciseResolver("A-small-practice", solver).resolve();
     new ExerciseResolver("A-large-practice", solver).resolve();
   }
 
-  public A() {
+  public StandingOvation() {
     super(new LineByLineCaseReader(new InputSpaceParsing()));
   }
 

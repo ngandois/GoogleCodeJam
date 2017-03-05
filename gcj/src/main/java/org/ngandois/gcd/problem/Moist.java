@@ -1,4 +1,4 @@
-package org.ngandois.gcd.MMXVI.university.practice;
+package org.ngandois.gcd.problem;
 
 import org.ngandois.gcd.tools.CaseResolver;
 import org.ngandois.gcd.tools.ExerciseResolver;
@@ -10,15 +10,15 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 
-public class C_Moist extends CaseResolver {
+public class Moist extends CaseResolver {
 
   public static void main(String[] args) throws IOException {
-    C_Moist solver = new C_Moist();
+    Moist solver = new Moist();
     new ExerciseResolver("C-small-practice-1", solver).resolve();
     new ExerciseResolver("C-small-practice-2", solver).resolve();
   }
 
-  public C_Moist() {
+  public Moist() {
     super(new ReadNbLineFirstCaseReader(new InputNoParsing()));
   }
 

@@ -30,7 +30,8 @@ public abstract class CaseResolver implements Function<Exercise.TestCase, Exerci
     Exercise.TestResult result;
     try {
       String r = solve(testCase.data);
-      log.info("solved #{} in {}s", testCase.testNumber, MILLISECONDS.toSeconds(System.currentTimeMillis() - b));
+      long end = System.currentTimeMillis() - b;
+      log.info("solved #{} in {}ms ({}s)", testCase.testNumber, end, MILLISECONDS.toSeconds(end));
       result = new Exercise.TestResult(testCase.testNumber, r);
     } catch (Throwable t) {
       log.fatal("cannot solve " + testCase, t);

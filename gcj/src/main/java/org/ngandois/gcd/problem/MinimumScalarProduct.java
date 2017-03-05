@@ -1,4 +1,4 @@
-package org.ngandois.gcd.MMVIII.round.one.A;
+package org.ngandois.gcd.problem;
 
 import org.ngandois.gcd.tools.CaseResolver;
 import org.ngandois.gcd.tools.ExerciseResolver;
@@ -12,14 +12,14 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 
-public class A extends CaseResolver {
+public class MinimumScalarProduct extends CaseResolver {
 
   public static void main(String[] args) throws IOException {
-    A solver = new A();
+    MinimumScalarProduct solver = new MinimumScalarProduct();
     new ExerciseResolver("A-small-practice", solver).resolve();
   }
 
-  public A() {
+  public MinimumScalarProduct() {
     super(new SkipOneReadXCaseReader(2, new InputSpaceParsing()));
   }
 
