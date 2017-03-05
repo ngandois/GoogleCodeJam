@@ -49,8 +49,8 @@ public class SenateEvacuation extends CaseResolver {
 
     StringJoiner joiner = new StringJoiner(" ");
 
-    // we know that all test cases are correct so at the beginning this is no majority
-    // and at the end it will not too
+    // we know that all test cases are correct so at the beginning there is no majority
+    // and at the end it will not too (so can escape all the remaining)
 
     while (parties.size() > 2) { // escape one by one the most representative party until only two remains
       parties.sort(Comparator.comparingInt(String::length));
