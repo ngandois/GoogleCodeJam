@@ -1,2 +1,4 @@
-./gradlew build
+language: java
+jdk:
+  - oraclejdk8
 
