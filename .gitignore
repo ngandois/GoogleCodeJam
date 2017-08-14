@@ -4,3 +4,5 @@
 /gcj/gradle
 /gcj/*.iml
 /gcj/.gradle
+/.gradle
+build/
