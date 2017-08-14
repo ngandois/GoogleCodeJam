@@ -5,6 +5,8 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.StringJoiner;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -14,6 +16,15 @@ public class ResultWriter implements Consumer<Exercise.TestResult> {
 
   private static final Logger log = LogManager.getLogger(ResultWriter.class);
 
+  private static final String outputDir = "exercise-output";
+  static {
+    try{
+      Files.createDirectories(Paths.get(outputDir));
+    } catch( Exception e){
+      log.error("cannot create out put directiry for tests", e);
+    }
+  }
+
 
   private final String[] results;
   private final AtomicInteger currentNbResults = new AtomicInteger(0);
@@ -21,7 +32,7 @@ public class ResultWriter implements Consumer<Exercise.TestResult> {
   private final String fileName;
 
   public ResultWriter(int nbCases, String fileName) {
-    this.fileName = String.join("/", "exercise-output", fileName);
+    this.fileName = String.join("/", outputDir, fileName);
     results = new String[nbCases];
   }
 
