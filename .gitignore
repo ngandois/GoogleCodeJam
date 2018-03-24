@@ -6,4 +6,5 @@
 /gcj/.gradle
 /.gradle
 build/
-/exercise-output
+exercise-output
+out/
